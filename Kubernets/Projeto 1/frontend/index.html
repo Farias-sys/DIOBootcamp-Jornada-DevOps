@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles.css">
+        <title>Cadastre se já!</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1 id="title-text">CADASTRE SE JÁ!</h1>
+        </div>
+
+        <div class="main">
+            <div class="personal-data">
+                <div class="div-title">
+                    <h2 id="pd-title">Dados</h2>
+                </div>
+
+                <div class="form-pd">
+                    <form onsubmit="" action="" method="post" class="form-pd">
+                        <div class="input-group" style="display: flex;">
+                            <div class="input-group">
+                                <label for="name" class="form-labels form-content">Digite seu nome completo</label>
+                                <input type="text" name="name" id="name" class="form-content" style="width: 16rem;">
+                            </div>
+                            <div class="input-group">
+                                <label for="email" class="form-labels form-content">Digite seu email</label>
+                                <input type="email" name="email" id="email" class="form-content" placeholder="exemplo@gmail.com" style="width: 25rem;">
+                            </div>                            
+                        </div>  
+                        <div class="form-submit">
+                            <button class="btnsubmit" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script>
+    const submit = {
+        data(){
+            name = document.querySelector('#name').value
+            email = document.querySelector('#email').value
+
+            axios.post('/api/create', {name, email}, {
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            })
+        }
+    }
+</script>
