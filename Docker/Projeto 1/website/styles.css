@@ -1,0 +1,305 @@
+@charset "UTF-8";
+
+/*Global Attributes*/
+
+:root{
+    --red-used: #892626;
+    --background-gray: #272525;
+    --profile-gray: #303030;
+    --display-shadow-gray: #434343;
+    --content-gray: #353535;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background-gray);
+}
+
+section.profile{
+    display: flex;
+}
+
+/*Fonts used*/
+
+@font-face {
+    font-family: GothamBlack;
+    src: url(/_fonts/GothamBold.ttf);
+}
+
+@font-face {
+    font-family: GothamBookItalic;
+    src: url(/_fonts/GothamBookItalic.ttf);
+}
+
+@font-face {
+    font-family: GothamLightItalic;
+    src: url(/_fonts/GothamLightItalic.ttf);
+}
+
+@font-face {
+    font-family: GothamBook;
+    src: url(/_fonts/GothamBook.ttf);
+}
+
+/* Header */
+
+header {
+    background: var(--red-used);
+    padding: 2rem 0 6rem;
+}
+
+/*Profile display =============*/
+
+.perfil{
+    margin-top: -5rem;
+    margin-left: 6rem;
+    display: flex;
+
+    width: 70%;
+    height: 70%;
+}
+
+.profile.details {
+    margin-left: 2.7rem;
+
+    padding-right: 2.9rem;
+
+    max-width: 52.4rem;
+    max-height: 12.5rem;
+
+    margin-top: 10px;
+
+    background: var(--profile-gray);
+}
+
+.profile.text {
+    margin-top: 1.3rem;
+    margin-left: 1.4rem;
+}
+
+/*Social Media display =====================*/
+
+.redes-sociais{
+    display: flex;
+    margin-left: -4rem;
+    margin-top: -2.5rem;
+}
+
+.btns{
+    margin-left: 1rem;
+}
+
+.github-btn{
+    width: min(90vw, 80px);
+    height: min(90vh, 80px);
+
+    align-items: center;
+    text-align: center;
+
+    box-shadow: 5px 7px 7px 6px rgba(0, 0, 0, 0.25);
+}
+
+.instagram-btn{
+    width: min(90vw, 80px);
+    height: min(90vh, 80px);
+
+    align-items: center;
+    text-align: center;
+
+    box-shadow: 5px 7px 7px 6px rgba(0, 0, 0, 0.25);
+}
+
+.whatsapp-btn{
+    width: min(90vw, 80px);
+    height: min(90vh, 80px);
+
+    align-items: center;
+    text-align: center;
+
+    box-shadow: 5px 7px 7px 6px rgba(0, 0, 0, 0.25);
+}
+
+/*Texts ==================*/
+
+#nome-titulo{
+    margin-bottom: 0.3rem;
+
+    font-family: GothamBlack;
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+}
+
+.descricao {
+    font-family: GothamBookItalic;
+    font-size: 12px;
+
+
+    
+    color: white;
+}
+
+#last-update{
+    font-family: GothamLightItalic;
+    font-size: 12px;
+    color: #B0B0B0;
+    
+    margin-top: 1.2rem;
+}
+
+.display-title{
+    font-family: GothamBlack;
+    color: white;
+}
+
+h1.display-texts{
+    font-family: GothamBook;
+    font-weight: 200;
+    font-size: 18px;
+    color: white;
+}
+
+/*Main content ==============================================================*/
+
+.container {
+    margin-top: 4.3rem;
+    margin-left: 6.7rem;
+    
+    width: max(90vw, 86rem);
+    height: min(90vh, 401px);
+
+    transform: scale(0.8);
+    transform-origin: 0 0;
+
+    background: var(--content-gray);
+}
+
+.content {
+    display: flex;
+}
+
+/*Displays =================================================*/
+
+.display{
+    margin-left: 2.5rem;
+    margin-top: 2rem;
+    display: block;
+}
+
+hgroup.display-texts{
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.display-contents{
+    background: var(--display-shadow-gray);
+}
+
+
+/*Qualifications -----------------*/
+
+.qualifications{
+    width: min(90vw, 450px);
+    height: min(90vh, 365px);
+
+    margin-left: 2rem;
+}
+
+#qualifications-title{
+    background: var(--red-used);
+    text-align: center;
+}
+
+#qualifications-display{
+    width: min(90vw, 450px);
+    height: min(90vh, 280px);
+
+    margin-top: 1.2rem;
+}
+
+/*Hobbies ------------------------*/
+
+.hobbies{
+    width: min(90vw, 250px);
+    height: min(90vh, 365px);
+}
+
+#hobbies-title{
+    background: var(--red-used);
+    text-align: center;
+}
+
+#hobbies-display{
+    width: min(90vw, 250px);
+    height: min(90vh, 280px);
+
+    margin-top: 1.2rem;
+}
+
+/*Routine -----------------------*/
+
+.routine{
+    width: min(90vw, 525px);
+
+}
+
+#routine-title{
+    background: var(--red-used);
+    text-align: center;
+}
+
+#routine-display{
+    width: min(90vw, 525px);
+    height: min(90vw, 280px);
+
+    margin-top: 1.2rem;
+
+    padding-top: 1rem;
+}
+
+/*Routine Table --------------------*/
+
+div.routine-table{
+    margin-left: 1.15rem;
+}
+
+.routine-table{
+    width: min(90vw, 490px);
+    height: min(90vh, 250px);
+
+    color: white;
+
+    background: rgb(37, 37, 37);
+}
+
+.routine-table thead{
+    font-family: GothamBlack;
+
+    text-align: center;
+
+}
+
+.routine-table tbody tr td{
+    font-family: GothamBook;   
+    padding: 0.5rem 0.5rem;
+}
+
+.routine-table tbody tr td:first-child{
+    font-family: GothamBlack;
+    align-items: center;
+}
+
+
+
+/*Responsive ==============================*/
+
+@media (min-width: 800px) {
+    html {
+        font-size: 87,5%;
+    }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--@Author: Faria-sys-->
+<!--Last update: 11/08/2021-->
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">    
+    <link rel="stylesheet" href="/styles.css">
+    <title>Carlos Alberto</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <!-- Only color -->
+    </header>
+    <section class="profile">
+        <div class="perfil">
+            <img src="/assets/foto.svg" alt="">
+            <div class="profile details">
+                <hgroup class="profile text">
+                    <h1 id="nome-titulo">Carlos Alberto F. S. Junior</h1>
+                    <h2 class="descricao">Estudante do IFRJ-CNIT - Curso de Técnico em Informática;</h2>
+                    <h2 class="descricao">Residente na cidade de Niterói / RJ;</h2>
+                    <h2 class="descricao">16 anos;</h2>
+                    <h3 id="last-update">Última Atualização: 12/08/2021</h3>
+                </hgroup>
+            </div>
+        </div>
+
+        <div class="redes-sociais">
+
+            <div class="github btns">
+                <button onclick="abrirGithub()" class="github-btn">
+                    <img src="/assets/btns/icons8-github 1btn.svg" width="80px"">
+                </button>
+            </div>
+
+            <div class="instagram btns">
+                <button onclick="abrirInstagram()" class="instagram-btn">
+                    <img src="/assets/btns/icons8-instagram 1btn.svg" width="75px">
+                </button>
+            </div>
+
+            <div class="whatsapp btns">
+                <button onclick="abrirWhatsapp()" class="whatsapp-btn">
+                    <img src="/assets/btns/icons8-whatsapp 1btn.svg" width="75px">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="content">
+            <div class="qualifications display">
+                <div id="qualifications-title">
+                    <h1 class="display-title">QUALIFICAÇÕES</h1>
+                </div>
+                <div class="display-contents" id="qualifications-display">
+                    <hgroup class="display-texts">
+                        <h1 class="display-texts">
+                            - Desenvolvimento WEB Fullstack / Udemy, Brasil; <br>
+                            <br>
+                            - Fundamentos de Ethical Hacking / Udemy, Brasil;<br>
+                            <br>
+                            - Fundamentos de Bancos de Dados / IFRS;<br>
+                            <br>
+                            - Python Básico / Udemy, Brasil;<br>
+                            <br>
+                            -Controle Social / ENAP, Brasil;
+                        </h1>
+                    </hgroup>
+                </div>
+            </div>
+            <div class="hobbies display">
+                <div id="hobbies-title">
+                    <h1 class="display-title">HOBBIES</h1>
+                </div>
+                <div class="display-contents" id="hobbies-display">
+                    <hroup class="display-texts">
+                        <!--Professor, ignore o fato de eu ter aplicado o style diretamente aqui.
+                        Por algum motivo sobrenatural, o troço simplesmente não funcionou no CSS externo 
+                        e funcionou aqui, pode ter sido problema na minha hierarquia.-->
+                        <h1 class="display-texts" style="padding-top: 1rem; padding-left: 1rem;">
+                            - Entusiasta da aviação;<br>
+                            <br>
+                            - Jogar jogos como 
+                            Valorant, CSGO, GTAV;<br>
+                            <br>
+                            - Fazer artes estéticamente duvidosas no Photoshop;<br>
+                            <br>
+                            - Ver animes;<br>
+                            <br>
+                            - Ler livros investigativos ou de filosofia;<br>
+                            <br>
+                        </h1>
+                    </hroup>
+                </div>
+            </div>
+            <div class="routine display">
+                <div id="routine-title">
+                    <h1 class="display-title">ROTINA</h1>
+                </div>
+                <div class="display-contents" id="routine-display">
+                    <!--Forças sobrenaturais operam aqui novamente,
+                    por algum motivo, se tirar essa div, vai tudo pro saco-->
+                    <div class="routine-table">
+                        <table class="routine-table">
+                            <thead>
+                                <tr>
+                                    <th>Turnos</th>
+                                    <th>Segunda, quarta e sexta</th>
+                                    <th>Terça e quinta</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Manhã</td>
+                                    <td>Tomar café da manhã, revisar matérias e programar</td>
+                                    <td>Trabalhar e revisar matérias</td>
+                                </tr>
+                                <tr>
+                                    <td>Tarde</td>
+                                    <td>Ver aulas da escola, estudar para o Enem e malhar</td>
+                                    <td>Ver aulas da escola, estudar para o Enem e malhar</td>
+                                </tr>
+                                <tr>
+                                    <td>Noite</td>
+                                    <td>Adiantar as coisas do próximo dia, dedicar aos Hobbies</td>
+                                    <td>Curso de inglês, dedicar aos Hobbies e planejar o próximo dia</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="functions.js"></script>
+</body>
